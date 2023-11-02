@@ -1,0 +1,97 @@
+.container {
+}
+
+.userAvatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userInfoContainer {
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.userBlock {
+  max-width: 320px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.UserInfoParent {
+  display: flex;
+  color: #666060;
+  flex-direction: column;
+}
+
+.CategoriesContainer {
+  margin-top: 70px;
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+}
+.CategoriesWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+.MovieRowContainer {
+  margin-top: 50px;
+  transition: all 1s ease;
+  height: 150px;
+}
+.MovieWrapper {
+  max-width: max-content;
+  transition: all 1s ease;
+  overflow: hidden;
+  align-items: center;
+  height: 165px;
+  min-width: 1410px;
+  &:hover {
+    .ArrowContainer {
+      visibility: visible;
+    }
+  }
+}
+.MovieItem {
+  min-width: 278px;
+  margin-left: 10px;
+  height: 165px;
+  transition: transform 0.5s ease; /* Плавный переход при изменении transform */
+  background-color: #333;
+}
+
+.MovieList {
+  display: flex;
+  transition: transform 0.5s ease; /* Плавный переход при изменении transform */
+  white-space: nowrap; /* Не переносить на новую строку */
+  max-width: max-content;
+}
+
+.ArrowContainer {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1519px;
+
+  min-width: 1370px;
+  width: 1100px;
+  position: relative;
+
+  visibility: hidden;
+  height: 20px;
+  bottom: 70%;
+  left: 30px;
+}
+
+.ArrowNext {
+  user-select: none;
+  z-index: 999;
+}
+
+.ArrowPrev {
+  user-select: none;
+  z-index: 999;
+  top: 50%;
+}
